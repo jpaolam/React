@@ -1,0 +1,3 @@
+Componente: factoria de elementos, es una función que devuelve elementos
+Elementos: los que son renderizados por react.
+propts: deberían de ser inmutables, modificarlos es una mala práctica, para modificar mejor hacer una constante.

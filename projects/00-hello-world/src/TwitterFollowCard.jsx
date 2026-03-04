@@ -1,4 +1,4 @@
-function TwitterFollowCard({userName, name}) {
+function TwitterFollowCard({userName, name, formattedUsername}) {
   const formatUserName = (username) => `@${username}`
   return (
     <article className='jm-followCard'>
@@ -9,7 +9,7 @@ function TwitterFollowCard({userName, name}) {
           <strong>
             {name}
           </strong>
-          <span className='jm-followCard-username'>{formatUserName(userName)}</span>
+          <span className='jm-followCard-username'>{formattedUsername}</span>
         </div>
       </header>
       <aside>

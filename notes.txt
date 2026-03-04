@@ -1,3 +1,12 @@
 Componente: factoria de elementos, es una función que devuelve elementos
 Elementos: los que son renderizados por react.
 propts: deberían de ser inmutables, modificarlos es una mala práctica, para modificar mejor hacer una constante.
+
+Imperativo: se detalla paso a paso lo que hay que hacer
+Declarativo: se declara que es lo que se espera.
+
+Cada vez que cambiamos el estado, react lo detecta y renderiza la UI
+Con un imperativo le debemos de decir que parte del DOM cambiar
+react solo actualiza lo que cambia
+React le hace como una foto a lo primero que renderiza, cuando se busca hacer un cambio el hace la comparación y así sabe 
+que cambiar exactamente.

@@ -1,22 +1,37 @@
-import { StrictMode } from 'react'
+import { StrictMode, useState } from 'react'
 import './App.css'
 import TwitterFollowCard from './TwitterFollowcard'
 
 function App() {
+  const [name, setName] = useState('Jessie Martel')
   // const addAt = (username) => `@${username}`;
   const formattedUsername = (username) => <span>@{username}</span>
+  //No tan buena práctica, pero se puede hacer así también
+  // const jmartel = {
+  //   name: 'Jessie Martel',
+  //   username: 'jessiemartel',
+  //   formattedUsername: (username) => formattedUsername({username})
+  // }
+  // const gaboriell = {
+  //   name: 'Paola Gaboriell',
+  //   username: 'gaboriell',
+  //   formattedUsername: (username) => formattedUsername({username})
+  // }
   return (
     <StrictMode>
       <section className='App'>
         <TwitterFollowCard 
         formattedUsername={formattedUsername} 
-        userName="jessiemartel" 
-        name="Jessie Martel"/>
+        username="jessiemartel"
+        name={name}/>
         <br></br>
         <TwitterFollowCard 
         formattedUsername={formattedUsername} 
-        userName="gaboriell" 
+        username="gaboriell" 
         name="Paola Gaboriell"/>
+
+        <button onClick={() => setName('Paola Martel')}>Cambio Nombre</button>
+
       </section>
     </StrictMode>
   ) 

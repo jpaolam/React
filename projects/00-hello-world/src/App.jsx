@@ -1,6 +1,6 @@
 import { StrictMode, useState } from 'react'
 import './App.css'
-import TwitterFollowCard from './TwitterFollowcard'
+import TwitterFollowCard from './TwitterFollowCard'
 
 function App() {
   const [name, setName] = useState('Jessie Martel')
@@ -24,14 +24,8 @@ function App() {
         formattedUsername={formattedUsername} 
         username="jessiemartel"
         name={name}/>
-        <br></br>
-        <TwitterFollowCard 
-        formattedUsername={formattedUsername} 
-        username="gaboriell" 
-        name="Paola Gaboriell"/>
 
         <button onClick={() => setName('Paola Martel')}>Cambio Nombre</button>
-
       </section>
     </StrictMode>
   ) 

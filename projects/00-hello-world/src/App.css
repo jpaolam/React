@@ -19,9 +19,8 @@ body {
   gap: 4px;
 }
 
-.jm-followCard-info{
-  display: flex;
-  flex-direction: column;
+.jm-followCard-text{
+  display: block;
 }
 
 .jm-followCard-username{
@@ -46,12 +45,25 @@ body {
 }
 .jm-followCard-button.is-following{
   border: 1px solid #ea3d88;
+  background: transparent;
+  color: #fff;
+  width: 130px;
 }
 
 .jm-followCard-button:hover{
   background-color: #09f;
+  opacity: .8;
 }
 
 .jm-followCard-button.is-following:hover{
-  background: #ea3d88;
+  background: #b7454fa1;
+  color: red;
+  border: 1px solid red;
+}
+.jm-followCard-button.is-following:hover .jm-followCard-stop-follow{
+  display: block;
+}
+.jm-followCard-stop-follow{
+  display: none;
+
 }
